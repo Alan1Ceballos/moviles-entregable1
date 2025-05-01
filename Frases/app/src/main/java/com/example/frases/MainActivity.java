@@ -4,6 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.frases.fragments.QuoteFragment;
+import android.widget.Button;
+import android.content.Intent;
+import android.widget.Button;
+
 
 public class MainActivity extends AppCompatActivity {
     @Override

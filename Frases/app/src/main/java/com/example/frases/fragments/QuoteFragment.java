@@ -1,5 +1,6 @@
 package com.example.frases.fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
@@ -9,12 +10,11 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.frases.QuoteListActivity;
 import com.example.frases.R;
 import com.example.frases.api.QuoteApi;
-import com.example.frases.models.Quote;
 
 import org.json.JSONException;
-import org.json.JSONObject;
 
 public class QuoteFragment extends Fragment {
 
@@ -39,6 +39,13 @@ public class QuoteFragment extends Fragment {
         loadRandomQuote();
 
         refreshButton.setOnClickListener(v -> loadRandomQuote());
+
+        Button openListButton = view.findViewById(R.id.openListButton);
+        openListButton.setOnClickListener(v -> {
+            Intent intent = new Intent(getActivity(), QuoteListActivity.class);
+            startActivity(intent);
+        });
+
 
         return view;
     }
