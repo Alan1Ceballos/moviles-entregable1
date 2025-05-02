@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_random_quote"
+        android:icon="@drawable/ic_shuffle"
+        android:title="Frase Aleatoria" />
+    <item
+        android:id="@+id/nav_quotes_list"
+        android:icon="@drawable/ic_list"
+        android:title="Listado" />
+    <item
+        android:id="@+id/nav_favorites"
+        android:icon="@drawable/ic_favorite"
+        android:title="Favoritos" />
+</menu>

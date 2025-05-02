@@ -1,17 +1,19 @@
 package com.example.frases.models;
 
 public class Quote {
-    private String author;
+    private int id;
     private String quote;
+    private String author;
 
-    public Quote() {
+    public int getId() {
+        return id;
     }
 
-    public Quote(String author, String quote) {
-        this.author = author;
-        this.quote = quote;
+    public String getQuote() {
+        return quote;
     }
 
-    public String getAuthor() { return author; }
-    public String getQuote() { return quote; }
+    public String getAuthor() {
+        return author;
+    }
 }
